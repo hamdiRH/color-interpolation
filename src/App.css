@@ -44,7 +44,7 @@
 .btn-sort {
   background: white;
   color: red;
-  width: 90px;
+  /* width: 90px; */
   display: block;
 }
 

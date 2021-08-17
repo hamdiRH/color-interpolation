@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const SvgBox = ({ color, number }) => {
+    console.log(color)
   return (
       <svg
         height="30"

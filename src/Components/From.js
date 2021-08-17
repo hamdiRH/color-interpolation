@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 const From = ({ setBoxesNumber }) => {
-  const [number, setNumber] = useState(0);
+  const [number, setNumber] = useState(100);
   const handleSubmit = (e) => {
     e.preventDefault();
     setBoxesNumber(number);

@@ -1,3 +1,5 @@
+import { Color } from "@grapecity/wijmo";
+
 // generate number between min & max
 export function randomNumberBetween(min, max) {
   return Math.round(Math.random() * (max - min) + min);
@@ -11,7 +13,8 @@ export function generateRandomNumber(x) {
 // generate an array for svg box with {number,color}
 export function generateColorSvg(x) {
   const numbers = generateRandomNumber(x);
-  const colors = pourcentageToRgb(numbers);
+  const colors = interpolate(numbers);
+  console.log("colors", colors, "x", x);
   return Array.from({ length: x }, (_, i) => ({
     color: colors[i],
     number: numbers[i],
@@ -28,4 +31,15 @@ export function pourcentageToRgb(arrayOfRandomNumbers) {
       ? `rgb(${number} , 0 , 0)`
       : `rgb(0 , ${Math.abs(number)} , 0)`;
   });
+}
+
+export function interpolate(x) {
+
+  const c1 = new Color("green"),
+    c2 = new Color("red");
+
+  // calculate new gradient
+  return Array.from({ length: x.length }, (_, i) =>
+    Color.interpolate(c1, c2, i / x.length)
+  );
 }

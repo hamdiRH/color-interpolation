@@ -1177,6 +1177,18 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@grapecity/wijmo.styles@5.20212.812":
+  version "5.20212.812"
+  resolved "https://registry.yarnpkg.com/@grapecity/wijmo.styles/-/wijmo.styles-5.20212.812.tgz#9faf55573cb0a7c4af9ca0d174f9dd6cee819d3f"
+  integrity sha512-8/FXV5AVL8xrvOZJCU+VjEqm6dXO2mhlKcwRVMIPjyGvr+Y9tkpqvuXEbiOTzySvAfegXe44IbMco+f7FjJDGA==
+
+"@grapecity/wijmo@^5.20212.812":
+  version "5.20212.812"
+  resolved "https://registry.yarnpkg.com/@grapecity/wijmo/-/wijmo-5.20212.812.tgz#3faeb3cb29f7493e7db46aa8a10fcb9acee7cbd6"
+  integrity sha512-BsuGBByDH8+jfDdpzx0kYYKvMB3rcbIHQ5Ytu8H4d5hl4RKsHj0Bibq6OxcLYcoBqzsfcZLT7Fvm5aY8Jp9QJw==
+  dependencies:
+    "@grapecity/wijmo.styles" "5.20212.812"
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"

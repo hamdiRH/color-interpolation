@@ -1,12 +1,11 @@
 import React, { useState } from "react";
+import '@grapecity/wijmo.styles/wijmo.css';
 import Form from "./Components/From";
 import GenerateSvgBoxes from "./Components/GenerateSvgBoxes";
-import { generateRandomNumber } from "./Utils/helper";
 import "./App.css";
 
 function App() {
-  const [boxesNumber, setBoxesNumber] = useState(0);
-  console.table(generateRandomNumber(500))
+  const [boxesNumber, setBoxesNumber] = useState(100);
   return (
     <div className="App">
       <Form setBoxesNumber={setBoxesNumber} />
