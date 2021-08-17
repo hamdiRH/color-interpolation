@@ -7,9 +7,11 @@ const GenerateSvgBoxes = ({ boxesNumber }) => {
   return (
     <div className="svg-container">
       <button className="btn btn-sort">Sort</button>
-      {generateColorSvg(boxesNumber).map(({ color, number }) => (
-        <SvgBox color={color} number={number} />
-      ))}
+      <div>
+        {generateColorSvg(boxesNumber).map(({ color, number }) => (
+          <SvgBox color={color} number={number} />
+        ))}
+      </div>
     </div>
   );
 };

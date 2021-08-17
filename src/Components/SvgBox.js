@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 
 const SvgBox = ({ color, number }) => {
   return (
-    <div>
       <svg
         height="30"
         width="30"
@@ -24,7 +23,6 @@ const SvgBox = ({ color, number }) => {
           {number}
         </text>
       </svg>
-    </div>
   );
 };
 
