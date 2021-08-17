@@ -16,9 +16,9 @@ const From = ({ setBoxesNumber }) => {
       <form onSubmit={handleSubmit}>
         <input
           type="number"
+          className="input-number"
           value={number}
           onChange={handleChange}
-          className="input-number"
         />
         <button type="submit" className="btn">
           Confirm
