@@ -33,13 +33,19 @@ export function pourcentageToRgb(arrayOfRandomNumbers) {
   });
 }
 
-export function interpolate(x) {
-
+export function interpolate(array) {
   const c1 = new Color("green"),
     c2 = new Color("red");
 
   // calculate new gradient
-  return Array.from({ length: x.length }, (_, i) =>
-    Color.interpolate(c1, c2, i / x.length)
+  return Array.from({ length: array.length }, (_, i) =>
+    Color.interpolate(
+      c1,
+      c2,
+      array
+        .slice()
+        .sort((a, b) => a - b)
+        .indexOf(array[i]) / array.length
+    )
   );
 }
