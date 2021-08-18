@@ -9,4 +9,5 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-
+// ressource for interpolate module
+// https://www.grapecity.com/wijmo/demos/Core/Color/react

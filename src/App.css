@@ -44,14 +44,26 @@
 .btn-sort {
   background: white;
   color: red;
-  /* width: 90px; */
-  display: block;
+  width: 80px;
 }
 
+.btn-export{
+  background: white;
+  color: red;
+  width: 120px;
+}
 
-.svg-container{
+.svg-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.error {
+  color: white;
+  padding:10px;
+  margin:10px;
+  background-color: red;
+  font-size: 20px;
 }
